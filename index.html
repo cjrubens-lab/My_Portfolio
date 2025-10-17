@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+       <div class="header__container">
+         <div class="header__name">
+            Rubens
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="overlay"></label>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </ul>
+             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </nav>
+       </div>
+    </header>
+    <section class="section1">
+        <div class="section__content">
+            <h1 class="content__h1">Cillat Josué Rubens</h1>
+            <p class="content__p">Étudiant en informatique passionné par le web et par les interfaces modernes.</p>
+        </div>
+    </section>
+    <!-- Section À propos -->
+    <section id="apropos" class="section">
+        <h2 class="about__h2 section__h2"> À propos de moi</h2>
+        <div class="about">
+            <img src="avatar.jpg" alt="Ma photo" class="about__pic">
+            <div class="about__bio">
+                <p>👋 Salut ! Je m’appelle Rubens, je suis étudiant en première année de sciences à l’université.
+           Passionné par la technologie et le web, j’apprends actuellement à créer des sites modernes avec HTML et CSS.
+          Mon objectif est de devenir développeur web complet et de maîtriser aussi JavaScript, et d’autres outils dans les mois à venir.
+                  J'aime apprendre de nouvelles technologies et relever des défis créatifs.</p>
+                <div class="about__competences">
+                    <div class="about__competence">
+                        <span>HTML/CSS</span>
+                        <div class="about__barre"><div class="about__niveau HTML__CSS"></div></div>
+                    </div>
+                    <div class="about__competence">
+                        <span>Flexbox & Grid</span>
+                        <div class="about__barre"><div class="about__niveau Flexbox__Grid"></div></div>
+                    </div>
+                    <div class="about__competence">
+                        <span>Responsive Design</span>
+                        <div class="about__barre"><div class="about__niveau Responsive__Design"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <h2 class="projet__h2 section__h2" >Mes Projets</h2>
+        <div class="projet__grid">
+            <div class="projet__card">
+                <img src="Vente_Auto.png"  alt="Projet 1">
+                <h3 class="projet__h3">Un site web pour la vente de voitures</h3>
+                <p>Il comprend une page d’accueil, une galerie de véhicules et une section de contact.
+           Ce projet m’a permis d’apprendre à structurer une page, gérer les espacements et créer un design responsive.</p>
+                <button class="projet__btn">Voir plus</button>
+            </div>
+            <div class="projet__card">
+                <img src="portfolio.png" alt="Projet 2">
+                <h3 class="projet__h3">Page de portfolio</h3>
+                <p>
+                  Ce site est mon portfolio personnel, conçu pour présenter mes compétences et mes réalisations.
+           L’objectif était de pratiquer le responsive design, les animations CSS et les mises en page modernes.
+                </p>
+                <button class="projet__btn">Voir plus</button>
+            </div>
+            <div class="projet__card">
+                <img src="Form.png" alt="Projet 3">
+                <h3 class="projet__h3">Page de formulaire de contact</h3>
+                <p>
+                  Ce projet consiste en une page web contenant un formulaire complet conçu avec HTML et CSS uniquement.
+           L’objectif était d’apprendre à créer des champs bien alignés, lisibles et esthétiques, tout en respectant les bonnes pratiques d’accessibilité.
+                </p>
+                <button class="projet__btn">Voir plus</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <h2 class="contact__h2 section__h2">Contact</h2>
+        <form action="https://formspree.io/f/xzzjkyyo" method="POST" class="contact__form">
+            <div class="contact__type">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="name" placeholder="Ecris ton nom ici!" required>
+            </div>
+            <div class="contact__type">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ecris ton Email ici!" required>
+            </div>
+            <div class="contact__type">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" name="message" placeholder="Ecris.....!" required></textarea>
+            </div>
+            <button type="submit" class="contact__btn contact__btn-submit">Envoyer</button>
+        </form>
+    </section>
+
+     <section class="contact__methods">
+                <h2 class="section__h2">Autres moyens de contact</h2>
+
+                <div class="contact__cards">
+                    <!-- Email -->
+                    <div class="contact__card">
+                        <h3>Email</h3>
+                        <p>c.j.rubens08012006@gmail.com</p>
+                        <a href="mailto:c.j.rubens08012006@gmail.com" class="contact__link"><i class="fa-solid fa-envelope"></i>Envoyer un email</a>
+                    </div>
+
+                    <!-- Téléphone -->
+                    <div class="contact__card">
+                        <h3>Téléphone</h3>
+                        <p>+509 43 77 52 76</p>
+                        <a href="tel:50943775276" class="contact__link"><i class="fa-solid fa-phone"></i>Appeler maintenant</a>
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="contact__card">
+                        <h3>Réseaux sociaux</h3>
+                        <p>Suivez-moi sur les réseaux</p>
+                        <div class="social-contact-links">
+                            <a href="https://x.com/cj_rubens" target="_blank" class="social__link twitter"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+                            <a href="https://www.linkedin.com/in/cj-rubens" target="_blank" class="social__link linkedin"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </div>
+
+                    </div>
+                </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__social-links">
+            <a href="https://www.instagram.com/cj_rubens"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="https://wa.me/50943775276?text=Bonjour%2C520comment%20vas-tu%3F" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+            <a href="https://www.facebook.com/profile.php?id=61582059998014"><i class="fa-brands fa-facebook"></i>Facebook</a>
+        </div>
+        <p>&copy; 2025 - Cillat Josué Rubens</p>
+    </footer>
+</body>
+</html>
